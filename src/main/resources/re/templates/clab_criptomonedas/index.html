@@ -1,0 +1,12 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head> 
+        <title th:replace="~{clab_criptomonedas/fragmentos/fragmentos_principales :: head}"/>
+    </head>
+    <body>
+        <div th:insert="~{clab_criptomonedas/fragmentos/fragmentos_principales :: cabecera}"></div>
+        <form th:action="clab_criptomonedas" method="POST">
+        <div th:utext="${clab_criptomonedas_tex}"></div>
+        </form>
+    </body>
+</html>
